@@ -1,0 +1,4 @@
+services:
+  d8_lille.pixabay_requester:
+    class: Drupal\d8_lille\Services\PixabayRequester
+    arguments: ['@http_client']

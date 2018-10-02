@@ -1,0 +1,7 @@
+images_wall:
+  js:
+    js/images-wall.js: {}
+    https://cdn.jsdelivr.net/npm/macy@2.3.0/dist/macy.js: {external: true}
+  css:
+    component:
+      css/images-wall.css: {}

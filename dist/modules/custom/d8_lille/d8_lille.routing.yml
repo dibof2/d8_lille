@@ -1,0 +1,8 @@
+d8_lille.images_wall:
+  path: '/images/wall/{keyword}'
+  defaults:
+    _controller: '\Drupal\d8_lille\Controller\ImagesWallController::display'
+    _title: 'Images Wall'
+    keyword: 'fox'
+  requirements:
+    _permission: 'access images wall'
