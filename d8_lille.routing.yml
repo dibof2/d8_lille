@@ -1,0 +1,16 @@
+d8_lille.images_wall:
+  path: '/images/wall/{keyword}'
+  defaults:
+    _controller: '\Drupal\d8_lille\Controller\ImagesWallController::display'
+    _title: 'Images Wall'
+    keyword: ''
+  requirements:
+    _permission: 'access images wall'
+
+d8_lille.images_wall.config.form:
+  path: '/admin/config/images/wall'
+  defaults:
+    _form: '\Drupal\d8_lille\Form\ImagesWallConfigForm'
+    _title: 'Images Wall Config Form'
+  requirements:
+    _permission: 'administer content'

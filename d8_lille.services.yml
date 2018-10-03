@@ -1,0 +1,8 @@
+services:
+  d8_lille.pixabay_requester:
+    class: Drupal\d8_lille\Services\PixabayRequester
+    arguments: ['@http_client']
+  d8_lille.redirect_subscriber:
+    class: Drupal\d8_lille\EventSubscriber\RedirectSubscriber
+    tags:
+    - { name: event_subscriber }

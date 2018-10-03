@@ -1,0 +1,5 @@
+d8_lille.images_wall_setting_form:
+  title: 'Edit Images Wall settings'
+  route_name: d8_lille.images_wall.config.form
+  parent: system.admin_config_system
+  weight: 99

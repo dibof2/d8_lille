@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * Implements hook_theme.
+ */
+function d8_lille_theme() {
+  return [
+    'pixabay_wall' => [
+      'variables' => ['images' => NULL,],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_form_alter().
+ * @see https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Form%21form.api.php/function/hook_form_FORM_ID_alter/8.6.x
+ * @see https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Form%21form.api.php/function/hook_form_alter/8.6.x
+ */
+function d8_lille_form_system_site_information_settings_alter(&$form, $form_state, $form_id) {
+  $form['front_page']['#access'] = FALSE;
+}
