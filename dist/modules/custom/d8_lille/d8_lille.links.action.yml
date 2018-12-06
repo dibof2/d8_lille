@@ -1,5 +1,0 @@
-d8_lille.edit.paragraph:
-  route_name: entity.paragraphs_type.collection
-  title: 'Add Paragraph'
-  appears_on:
-  - entity.node_type.collection
